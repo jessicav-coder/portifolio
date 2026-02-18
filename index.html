@@ -11,19 +11,20 @@
 <body>
     <header>
         <h1>Jessica Carrilho - Desenvolvedora de Software</h1>
-        </header>
-        <main>
-        <section id="menu"> 
-        <ul>
-            <li><a href="#sobre">Sobre mim</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li><a href="https://google.com.br" target="_blank">Google</a></li>
-        </ul>
+        
+        <main class="container">
+        <section> 
+        
+            <div class="box" id="box1"><a href="#sobre">Sobre mim</a></div>
+            <div class="box" id="box2"><a href="#projetos">Projetos</a></div>
+            <div class="box" id="box3"><a href="#contato">Contato</a></div>
+            <div class="box" id="box4"><a href="https://google.com.br" target="_blank">Google</a></div>
+        
         </section>
      </main>
-    <section id="sobre">
-        <h2>Sobre mim</h2>
+     </header>
+    <section class="content" id="sobre">
+        <h2 class="subtitulo">Sobre mim</h2>
         <img src="FotoJessicaCarrilho.jpg" alt="Foto de Jessica Carrilho" title="Imagem de perfil de Jessica"> 
 
         <article>
@@ -35,16 +36,17 @@
                 os melhores resultados, e estou animada para compartilhar meus projetos e experiências!</p> <br>
         </article>
 
-        <aside>
-            <h2>Habilidades</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-        </aside>
+        
     </section>
-    <section id="habilidades">
+    <section class="content" id="habilidades">
+        <aside>
+            <h2 class="subtitulo">Habilidades</h2>
+            <main class="container">
+                <div class="habilidade">HTML</div>
+                <div class="habilidade">CSS</div>
+                <div class="habilidade">JavaScript</div>
+            </main>
+        </aside>
         <h3>Habilidades e Tecnologias</h3>
 <table>
     <thead>
@@ -74,8 +76,8 @@
 </table>
     </section>
 
-    <section id="projetos">
-        <h2>Projetos</h2> 
+    <section class="content" id="projetos">
+        <h2 class="subtitulo">Projetos</h2> 
         <article>
             <h4>Site de Portifólio</h4>
             <p>Este é o primeiro projeto desenvolvido para mostrar meus projetos e habilidades. O site é responsivo e
@@ -83,8 +85,8 @@
     </section>
   
 
-    <section id="contato">
-        <h2>Contatos</h2>
+    <section class="content" id="contato">
+        <h2 class="subtitulo">Contatos</h2>
         <p>Tem algum projeto em mente? Entre em contato comigo!</p>
         <form action="">
             <label for="nome">Nome:</label>
@@ -105,13 +107,13 @@
             </select><br>
 
 
-            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="30" required></textarea><br>
 
             <input type="checkbox" name="inscricao" id="inscricao">
             <label for="inscricao">Deseja receber minha newsletter? Fique por dentro das novidades!</label><br><br>
 
 
-            <input type="submit" value="Enviar"><br><br>
+            <input type="submit" value="Enviar"><br><br>  
         </form>
 
         <address>
@@ -124,6 +126,7 @@
     <footer>
         <p>&copy; 2026 Jessica Carrilho. Todos os direitos reservados.</p>
     </footer>
+    
 </body>
 
 </html>
